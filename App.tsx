@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import InventoryScreen from './screens/InventoryScreen';
 import HistoryScreen from './screens/HistoryScreen';
 import LoginScreen from './screens/LoginScreen';
-import RegisterScreen from './screens/RegisterScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import { RootStackParamList } from './types';
 
@@ -17,7 +16,6 @@ export default function App() {
       <Stack.Navigator initialRouteName="Login">
         {/* Đảm bảo chỉ có `Stack.Screen` ở đây */}
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
         <Stack.Screen name="Inventory" component={InventoryScreen} />
         <Stack.Screen name="History" component={HistoryScreen} />
