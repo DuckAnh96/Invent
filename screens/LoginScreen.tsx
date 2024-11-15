@@ -46,7 +46,7 @@ export default function LoginScreen({ navigation }: Props) {
       {error && <Text style={styles.error}>{error}</Text>}
       
       <Button title="Login" onPress={handleLogin} />
-      <Button title="Sign Up" onPress={() => navigation.navigate('Register')} />
+
     </View>
   );
 }
